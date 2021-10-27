@@ -1,0 +1,142 @@
+/**## Colors**/
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    /*Fonts*/
+
+    --primary-f: font-size: 18px;/*name and stats)*/
+
+}
+
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: var(--primary-f);
+    background: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-attachment: fixed;
+    background-position: right 50vw bottom 45vh, left 53vw top 40vh;
+    background-repeat: no-repeat;   
+    overflow: hidden;
+
+
+}
+
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 410px;
+    /* background: rgb(59, 13, 59); */
+    position: relative;
+    /* padding: 50px; */
+    margin-top: 200px;
+    background:#fff;
+    border-radius: 15px;
+    
+}
+
+.container .bg-pattern{
+    width: 100%;
+    border-radius: 15px 15px 0px 0;
+}
+
+.profile-pic {
+    /* display: block; */
+    /* margin-left:  auto;
+    margin-right: auto; */
+    border: 6px solid #fff;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    top: 25%;
+    left: 36%;
+    right: 25%;
+    z-index: 2;
+    height: 100px;
+    width: 100px;
+
+    
+
+}
+
+.container h1{
+    margin-top: 65px;
+    display: block;
+    position: relative;
+}
+
+    .place{
+        color: var(--Dark-grayish-blue);
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
+        display: block;
+    position: relative;
+    margin-bottom: 15px;
+    }
+
+.figures{
+    width: 100%;
+    height: 30%;
+    border-top: 1px solid rgb(201, 201, 201);
+    /* background-color: violet; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.figures__items{
+    text-align: center;
+    width: 30%;
+	float: left;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+    
+
+}
+.figures__items h2{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.figures__text{
+    color: var(--Dark-gray);
+    margin-top: 0px;
+}
+
+.container h1{
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+
+.info{
+    color: var(--Dark-grayish-blue);
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+
+
+@media screen and (max-width:375px) {
+    .container{
+        width: 90vw;
+    }
+
+    .profile-pic {
+        border-radius: 50%;
+        top: 18%;
+        left: 33%;
+    
+}
+}
