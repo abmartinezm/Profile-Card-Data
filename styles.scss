@@ -48,6 +48,7 @@ body {
     z-index: 2;
     height: 100px;
     width: 100px;
+    border-radius: 50%;
   }
 
   h1 {
@@ -113,6 +114,11 @@ body {
 
   }
   
+}
+
+.attribution{
+  cursor: pointer;
+  margin-top: 50px;
 }
 
 
